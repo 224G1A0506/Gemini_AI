@@ -30,6 +30,13 @@ app.use("/api/user",userRouter)
 //     let data=await geminiResponse(prompt)
 //     res.json(data)
 // })
+app.use(cors({
+    origin: [
+      "https://gemini-ai-phi-rouge.vercel.app", // your Vercel frontend URL
+      // add more allowed origins if needed
+    ],
+    credentials: true
+}));
 app.listen(port, () => {
     connectDB();
     console.log(`Server is running on port ${port}`);

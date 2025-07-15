@@ -67,7 +67,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175",
-  "https://gemini-ai-1t7a.vercel.app"
+  "https://gemini-ai-1t7a-224g1a0506s-projects.vercel.app"
 ];
 
 app.use(cors({

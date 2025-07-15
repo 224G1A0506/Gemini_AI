@@ -32,8 +32,8 @@ app.use("/api/user",userRouter)
 // })
 app.use(cors({
     origin: [
-      "https://gemini-ai-phi-rouge.vercel.app", // your Vercel frontend URL
-      // add more allowed origins if needed
+        "https://gemini-ai-1t7a.vercel.app", // Vercel frontend
+        // Add more allowed origins if needed
     ],
     credentials: true
 }));

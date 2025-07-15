@@ -17,7 +17,7 @@ console.log("All env vars:", Object.keys(process.env).filter(key => key.includes
 
 const app = express();
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
+    origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175","https://gemini-ai-1t7a.vercel.app"],
     credentials: true
 }))
 const port = process.env.PORT || 5000;

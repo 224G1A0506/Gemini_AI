@@ -4,7 +4,7 @@ import axios from 'axios';
 export const userDataContext = createContext();
 
 function UserContext({ children }) {
-    const serverUrl = "http://localhost:8000";
+    const serverUrl = "https://gemini-ai-2-kxit.onrender.com";
     const [userData, setUserData] = useState(null);
     
   const [frontendImage,setFrontendImage]=useState(null)

@@ -20,8 +20,8 @@ try{
     res.cookie("token",token,{
         httpOnly:true,
         maxAge:7*24*60*60*1000,
-        sameSite:"strict",
-        secure:false
+        sameSite:"none", // Changed from 'strict' to 'none' for cross-site
+        secure:true // Changed from false to true for HTTPS only
     })
     return res.status(201).json(user)
 }catch (error){
@@ -44,8 +44,8 @@ export const Login=async(req,res)=>{
         res.cookie("token",token,{
             httpOnly:true,
             maxAge:7*24*60*60*1000,
-            sameSite:"strict",
-            secure:false
+            sameSite:"none", // Changed from 'strict' to 'none' for cross-site
+            secure:true // Changed from false to true for HTTPS only
         })
         return res.status(200).json(user)
     }catch (error){

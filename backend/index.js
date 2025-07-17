@@ -68,7 +68,9 @@ const allowedOrigins = [
   "http://localhost:5174",
   "http://localhost:5175",
   "https://gemini-ai-1t7a-224g1a0506s-projects.vercel.app",
-  "https://gemini-ai-ub8z.vercel.app"
+  "https://gemini-ai-ub8z.vercel.app",
+  "https://gemini-ai-2-kxit.onrender.com", // Add your deployed frontend URL here
+  // Add more allowed origins if needed
 ];
 
 app.use(cors({

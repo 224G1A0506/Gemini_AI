@@ -23,7 +23,7 @@ function Customize2() {
             } else if (selectedImage) {
                 formData.append("imageUrl", selectedImage)
             }
-            const result = await axios.post(`${serverUrl}/api/user/update`, formData, { withCredentials: true })
+            const result = await axios.post(`${serverUrl}/api/user/update`, formData, { withCredentials: true }) // Required for authentication cookies
             setUserData(result.data)
             setLoading(false)
             navigate("/")

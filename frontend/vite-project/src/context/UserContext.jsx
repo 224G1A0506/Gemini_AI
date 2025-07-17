@@ -14,7 +14,7 @@ function UserContext({ children }) {
     const handleCurrentUser = async () => {
         try {
             const result = await axios.get(`${serverUrl}/api/user/current`, {
-                withCredentials: true
+                withCredentials: true // Required for authentication cookies
             });
             setUserData(result.data);
             console.log(result.data)
